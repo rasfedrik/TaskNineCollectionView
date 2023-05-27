@@ -34,6 +34,8 @@ class CollectionView: UICollectionView {
             right: 0
         )
         
+        layout.minimumLineSpacing = layout.collectionView!.layoutMargins.left
+        
         delegate = self
         dataSource = self
     }
